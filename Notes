@@ -1,0 +1,14 @@
+Remember:
+
+songData = [{url: '', title:'', artist}]
+
+SongModel a model containing a play method
+
+Songs - collection with SongModel as its model
+
+SongQueue is a n extention of Songs
+
+AppModel
+
+who calls SongModel's 'play'?
+
