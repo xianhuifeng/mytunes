@@ -22,16 +22,19 @@ var AppModel = Backbone.Model.extend({
       this.get('songQueue').add(song);
     }, this);
 
+//This way, wont make test pass
+    // params.library.on('ended',function(song){
+    //    this.get('songQueue').remove(song);
+    //    if(this.get('songQueue').length){
+    //     this.get('songQueue').playFirst();
+    //    }
+    // }, this);
+
     // params.library.on('dequeue',function(song){
     //    this.get('songQueue').remove(song);
+    //    if(this.get('songQueue').length){
+    //     this.get('songQueue').playFirst();
+    //    }
     // }, this);
-
-    // params.library.on('ended', function(song){
-    //   console.log('hello');
-    //   this.get('songQueue').at(0).dequeue();
-    // }, this);
-
-
   }
-
 });

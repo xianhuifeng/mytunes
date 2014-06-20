@@ -8,8 +8,9 @@ var SongQueue = Songs.extend({
         this.playFirst();
       }
     },this);
+
+    //This is the way to pass the test ,why, I have no idea
     this.on('ended', function(){
-      // console.log(this.at(0));
       this.at(0).dequeue();
     });
 
